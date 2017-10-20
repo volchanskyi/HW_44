@@ -50,7 +50,7 @@ public class Common {
 	return Locators.getMylist().get(elem);
     }
 
-    public static void pageValidation(int test_case, String el) {
+    public static void validatePage(int test_case, String el) {
 	System.out.println(Locators.getElems()[test_case] + (Common.isPresent(getEl(el)) ? "Exists" : "Not exist"));
     }
 

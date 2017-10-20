@@ -14,7 +14,7 @@ public class SignUp {
 		if (i == 42) {
 		    return;
 		} else {
-		    Common.pageValidation(i, key);
+		    Common.validatePage(i, key);
 
 		    i++;
 		}
