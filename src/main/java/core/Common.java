@@ -16,6 +16,7 @@ public class Common {
     public static void open(String url) {
 	String USERAGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:55.0) Gecko/20100101 Firefox/55.0";
 	Logger.getLogger("").setLevel(Level.OFF);
+
 	driver = new HtmlUnitDriver();
 	((HtmlUnitDriver) driver).setJavascriptEnabled(true);
 	((HtmlUnitDriver) driver).getBrowserVersion().setUserAgent(USERAGENT);
@@ -24,6 +25,7 @@ public class Common {
 	System.out.println(
 		"UserAgent: " + (String) ((JavascriptExecutor) driver).executeScript("return navigator.userAgent;"));
 	System.out.println("Page URL: " + driver.getCurrentUrl());
+
     }
 
     public static void quite() {
